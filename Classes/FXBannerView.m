@@ -11,7 +11,6 @@
 #import "RACUtiles.h"
 #import "FXCommon.h"
 #import "ReactiveObjC.h"
-#import "FXBannerData.h"
 
 #define BannerWidth [[UIScreen mainScreen] bounds].size.width
 
