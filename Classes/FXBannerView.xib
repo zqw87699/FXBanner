@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FXBannerView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FXBannerView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndI-zO-Zv0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="kgH-Lt-BMh">
+                    <rect key="frame" x="0.0" y="213" width="375" height="37"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="u33-eL-bpR"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kgH-Lt-BMh" secondAttribute="trailing" id="5AM-ZZ-7L7"/>
+                <constraint firstItem="ndI-zO-Zv0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Uvx-ZG-U41"/>
+                <constraint firstAttribute="trailing" secondItem="ndI-zO-Zv0" secondAttribute="trailing" id="Yvc-Xg-y42"/>
+                <constraint firstAttribute="bottom" secondItem="kgH-Lt-BMh" secondAttribute="bottom" id="aq3-QO-mv8"/>
+                <constraint firstItem="kgH-Lt-BMh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kBM-TK-o4I"/>
+                <constraint firstItem="ndI-zO-Zv0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qma-3q-vm4"/>
+                <constraint firstAttribute="bottom" secondItem="ndI-zO-Zv0" secondAttribute="bottom" id="xND-NZ-Rly"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="refPageControl" destination="kgH-Lt-BMh" id="WNX-eJ-m1w"/>
+                <outlet property="scrollView" destination="ndI-zO-Zv0" id="srx-Wi-fJL"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="54"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
