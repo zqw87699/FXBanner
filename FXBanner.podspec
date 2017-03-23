@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXBanner"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "广告"
 
   s.homepage     = "https://github.com/zqw87699/FXBanner"
@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
   s.module_name = 'FXBanner' 
 
   s.requires_arc = true
+
+  s.resources = 'Classes/*'
 
   s.source_files = 'Classes/*'
   s.public_header_files = 'Classes/*.h'
